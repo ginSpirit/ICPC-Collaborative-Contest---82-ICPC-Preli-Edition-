@@ -11,17 +11,16 @@ const long long MOD = 1e9 + 7;
 using namespace std;
 
 bool f(int year) {
-    return (year%400==0 || (year%4==0 && year%100!=0));
+    return (year%400==0 || (year%4==0 && year%100!=0));  //chk leapyear 
 }
 int dw(int year, int month, int day) {
     if (month < 3) {
-        month += 12; year -= 1;
+        month += 12; year -= 1;   
     }
     int k = year%100, j = year/100;
-    int h = (day+(13*(month+1))/5+k+k/4+j/4+5*j)%7;
+    int h = (day+(13*(month+1))/5+k+k/4+j/4+5*j)%7;        //note all the calculation
     return (h+5)%7;
 }
-
 int rm(int a, int b) {
     return (a+b+6)/7;
 }
