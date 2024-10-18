@@ -2,7 +2,7 @@
 #define input(v) for (auto &i : v) cin >> i
 #define endl "\n"
 #define all(x) x.begin(), x.end()
-
+ 
 typedef long long ll;
 typedef long long int int64;
 const int INF = 0x3f3f3f3f;
