@@ -14,7 +14,7 @@ signed main() {
     cin.tie(nullptr)->sync_with_stdio(false);
     
     string s; cin >> s;
-    if (s.find('7') != string::npos) {
+    if (s.find('7') != string::npos) {   // can be solve without string approach N/100==7 || (N/10)%10==7 || N%10==7 print Yes else No
         cout << "Yes" << endl;
     } else {
         cout << "No" << endl;
